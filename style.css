@@ -23,14 +23,13 @@ h1 {
   font-size: 22px;
 }
 
-.card, .tech-card {
-  max-width: 400px;
-  margin: 80px auto;
-  background: #fff;
+.card, .tech-dashboard {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
   padding: 30px;
   border-radius: 10px;
-  text-align: center;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
 }
 
 input {
@@ -62,10 +61,58 @@ button:hover {
   margin-top: 10px;
 }
 
+.profile-card {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
 .tech-photo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
+}
+
+.case-info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.case-info td {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-block p {
+  margin: 5px 0;
+}
+
+.activity-log ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.pdf-section {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.btn-download {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.footer-note {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
 }
